@@ -24,7 +24,7 @@ interface FileChange {
 
 export class GitConflictDetector {
     private config: GitConflictDetectorConfig;
-    private gitHubApiUrl = "https://api.github.com/";
+    private gitHubApiUrl = "https://api.github.com";
 
     constructor(config: GitConflictDetectorConfig) {
         this.config = config;
@@ -150,7 +150,7 @@ export class GitConflictDetector {
             const response = await axios.get(url, {
                 headers: {
                     'Authorization': `Bearer ${accessToken}`,
-                    'Accept': 'application/vnd.github.v3+json'
+                    'Accept': 'application/vnd.github+json'
                 }
             });
             const files = response.data.files || [];
