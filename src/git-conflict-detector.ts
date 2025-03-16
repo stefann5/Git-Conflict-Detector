@@ -226,7 +226,7 @@ export class GitConflictDetector {
       // Handle Axios errors specifically
       if (error && typeof error === 'object' && 'isAxiosError' in error && error.isAxiosError) {
         const axiosError = error as any;
-        const statusCode = axiosError.response?.status;
+        const statusCode = axiosError.response?.status || 'Unknown';
         const message = axiosError.response?.data?.message || axiosError.message;
         
         throw new Error(`GitHub API error (${statusCode}): ${message}`);
