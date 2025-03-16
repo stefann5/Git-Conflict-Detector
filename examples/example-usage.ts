@@ -4,7 +4,7 @@ const detector= new GitConflictDetector({
     owner:'stefann5',
     repo:'test-repo',
     accessToken:'',
-    localRepoPath:'C:/homework/jetbrains_task/test_repo/test-repo',
+    localRepoPath:'C:/homework/jetbrains_task/test_repo2',
     branchA:'branchA',
     branchB:'branchB'
 });
