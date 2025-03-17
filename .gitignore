@@ -48,5 +48,3 @@ temp/
 *.pem
 *.cert
 
-# Specific to this project
-# Add any project-specific files to ignore here
