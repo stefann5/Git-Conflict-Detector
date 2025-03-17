@@ -1,6 +1,6 @@
 {
   "name": "git-conflict-detector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to detect potential conflicts between a remote branch and a local branch in a Git repository",
   "main": "dist/git-conflict-detector.js",
   "types": "dist/git-conflict-detector.d.ts",
