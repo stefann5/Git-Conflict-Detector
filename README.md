@@ -1,7 +1,6 @@
 # Git Conflict Detector
 
 [![npm version](https://img.shields.io/npm/v/git-conflict-detector.svg)](https://www.npmjs.com/package/git-conflict-detector)
-[![npm downloads](https://img.shields.io/npm/dm/git-conflict-detector.svg)](https://www.npmjs.com/package/git-conflict-detector)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](https://www.typescriptlang.org/)
 
