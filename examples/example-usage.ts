@@ -1,27 +1,27 @@
-import {GitConflictDetector} from '../src/git-conflict-detector';
+import { GitConflictDetector } from '../src/git-conflict-detector';
 
-const detector= new GitConflictDetector({
-    owner:'stefann5',
-    repo:'test-repo',
-    accessToken:'',
-    localRepoPath:'C:/homework/jetbrains_task/test_repo2',
-    branchA:'branchA',
-    branchB:'branchB'
+const detector = new GitConflictDetector({
+    owner: 'github-username',
+    repo: 'repository-name',
+    accessToken: 'your-github-token',
+    localRepoPath: '/path/to/local/repo',
+    branchA: 'remote-branch-name',
+    branchB: 'local-branch-name'
 });
 
 async function findConflicts() {
-    try{
-        const result=await detector.findPotentialConflicts();
-        if(result.error){
+    try {
+        const result = await detector.findPotentialConflicts();
+        if (result.error) {
             console.error(`Error: ${result.error}`);
             return;
         }
         console.log(`Merge base commit: ${result.mergeBaseCommit}`);
         console.log(`Found ${result.potentialConflicts.length} potential confilcts`);
-        result.potentialConflicts.forEach(file=>console.log(` - ${file}`));
+        result.potentialConflicts.forEach(file => console.log(` - ${file}`));
 
-    }catch(error){
-        console.log(`Failed to find conflicts:`,error);
+    } catch (error) {
+        console.log(`Failed to find conflicts:`, error);
     }
 }
 
