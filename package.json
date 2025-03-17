@@ -14,6 +14,14 @@
     "lint": "eslint src/**/*.ts",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/stefann5/Git-Conflict-Detector.git"
+  },
+  "bugs": {
+  "url": "https://github.com/stefann5/Git-Conflict-Detector/issues"
+  },
+  "homepage": "https://github.com/stefann5/Git-Conflict-Detector",
   "keywords": [
     "git",
     "conflict",
@@ -21,7 +29,7 @@
     "github",
     "merge"
   ],
-  "author": "",
+  "author": "Stefan Nikolic <stefan.nik04@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",
